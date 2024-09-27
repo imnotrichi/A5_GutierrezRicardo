@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrega tu Pokémon - Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario para Agregar Pokémon a la Pokédex</h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="dialog">
+                <fieldset>
+                    <legend>Información del Pokémon</legend>
+
+                    <label for="nombre-pokemon">Nombre del Pokémon:</label>
+                    <input type="text" name="nombre-pokemon" id="nombre-pokemon">
+
+                    <br><br>
+
+                    <label for="numero-pokedex">Número en la Pokédex:</label>
+                    <input type="number" name="numero-pokedex" id="numero-pokedex">
+
+                    <br><br>
+
+                    <div>
+                        <label for="tipo">Tipo de Pokémon:</label><br>
+                        <input type="radio" name="tipo" value="fuego">
+                        <label for="fuego">Fuego</label><br>
+                        <input type="radio" name="tipo" value="agua">
+                        <label for="agua">Agua</label><br>
+                        <input type="radio" name="tipo" value="planta">
+                        <label for="planta">Planta</label><br>
+                        <input type="radio" name="tipo" value="electrico">
+                        <label for="electrico">Eléctrico</label>
+                    </div>
+
+                    <br>
+                    
+                    <label for="nivel-evolucion">Nivel de Evolución:</label>
+                    <select name="nivel-evolucion" id="nivel-evolucion">
+                        <option value="basico" selected>Basico</option>
+                        <option value="primera-evolucion">Primera Evolución</option>
+                        <option value="segunda-evolucion">Segunda Evolución</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="nivel-poder">Nivel de Poder:</label>
+                    <input type="range" name="nivel-poder" id="nivel-poder" max="100" min="1" value="50">
+
+                    <br><br>
+
+                    <label for="descripcion">Descripción del Pokémon:</label><br>
+                    <textarea name="descripcion" id="descripcion" placeholder="Escribe una breve descripción" rows="5" cols="70"></textarea>
+
+                    <br><br>
+
+                    <input type="submit" value="Agregar Pokémon">
+                    <input type="reset" value="Limpiar Formulario">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <br><br>
+        Ricardo Gutiérrez, 2024. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
